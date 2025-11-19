@@ -54,7 +54,6 @@ requirements:
     - bidict
     - psutil
     - setuptools_scm
-    - classy
     - cyclopts
     - tomlkit
 
