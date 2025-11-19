@@ -1,5 +1,5 @@
 {% set name = "21cmFAST" %}
-{% set version = "3.4.0b0" %}
+{% set version = "4.0.0b0" %}
 
 package:
   name: {{ name|lower }}
