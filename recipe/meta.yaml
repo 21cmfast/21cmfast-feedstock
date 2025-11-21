@@ -1,13 +1,14 @@
 {% set name = "21cmFAST" %}
-{% set version = "4.0.0b0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: f187700ae7e1d0c209fad50a7e6be61b125a31599fc6b143804bd31299b53a99
+  # url: https://pypi.org/packages/source/{{ name[0] }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  url: https://github.com/21cmfast/21cmFAST/archive/refs/heads/main.tar.gz
+  sha256: 6d4ec5e9bc1b1be5403784623dbcb1c7d8eccede3efef4e4bba27b78e288c747
 
 
 build:
