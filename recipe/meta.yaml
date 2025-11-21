@@ -25,7 +25,7 @@ requirements:
     - {{ stdlib("c") }}
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
-    - python       # [build_platform != target_platform]
+    - python >=3.11  # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
   host:
     - python >=3.11
@@ -39,7 +39,7 @@ requirements:
     - nomkl
     - setuptools
   run:
-    - python
+    - python >=3.11
     - scipy
     - numpy
     - click
